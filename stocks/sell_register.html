@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ko" >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	
+	<!-- [s] header -->
+	<header id="header">
+		<a href="javascript:history.back();" class="back_btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><span>이전페이지</span></a>
+	</header>
+	<!-- [e] header -->
+
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents">
+			<!-- [s] 기업정보 -->
+			<div class="stock_con bg_gray register">
+				<!-- [s] 등록상단 -->
+				<div class="stk_top bg_wht">
+					<div class="b_inner">
+						<div class="tit">
+							<b>카카오뱅크</b><i class="fa fa-star on"></i><span class="num">323410</span>
+							<div class="sns_share">
+								<a href="javascript:void(0);"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+								<div class="sns_list">
+									<a href="#"><i class="fa fa-comment" aria-hidden="true"></i>카카오</a>
+									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>인스타</a>
+									<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>문자</i></a>
+								</div>
+							</div>
+						</div><!-- tit -->
+						<a href="javascript:popupOpen('.layer_total');" class="total"><i class="fa fa-question-circle-o"></i><span>시가총액 30조 3,702억원</span></a>
+						<div class="prc ">
+							<span>현재가</span> <b class="tt up">91,000</b><span class="won">원</span>
+						</div>
+					</div><!-- b_inner -->
+				</div>
+				<!-- [e] 등록상단 -->
+
+				<!-- [s] 증감폼 -->
+				<div class="stk_con bg_wht">
+					<div class="inner">
+						<div class="tab_btn w2 infit">
+							<a href="sell_register.html" class="on">매도하기</a>
+							<a href="buy_register.html">매수하기</a>
+						</div><!-- tab_btn -->
+						<div class="reg_form">
+							<div class="number">
+								<label for="numInp_1">수량</label>
+								<input type="text" name="numInp_1" class="numberUpDown input_basic tar" value="1"><span>주</span>
+								<div class="btn">
+									<a href="javascript:void(0);" class="decreaseQuantity">-</a>
+									<a href="javascript:void(0);" class="increaseQuantity">+</a>
+								</div>
+							</div>
+							<div class="number">
+								<label for="numInp_2">주당가격</label>
+								<input type="text" name="numInp_2" class="numberUpDown input_basic tar" value="1"><span>원</span>
+								<div class="btn">
+									<a href="javascript:void(0);" class="decreaseQuantity">-</a>
+									<a href="javascript:void(0);" class="increaseQuantity">+</a>
+								</div>
+							</div>
+						</div><!-- reg_form -->
+						
+						
+					</div><!-- inner -->
+				</div>
+				<!-- [e] 증감폼 -->
+
+				<div class="full_total">
+					<span class="tag">총 금액</span><b>74,500<em>원</em></b>
+				</div>
+				
+				<!-- [s] 선택폼 -->
+				<div class="stk_con bg_wht sel_form">
+					<div class="inner">
+						<div class="option_check infit">
+							<span class="tt">유형</span>
+							<ul>
+								<li>
+									<input type="radio" name="selCat" id="selCat_1" class="rchk txt" onchange="setDisplay()">
+									<label for="selCat_1" class="rchk_label txt rd">협의주문</label>
+								</li>
+								<li>
+									<input type="radio" name="selCat" id="selCat_2" class="rchk txt" onchange="setDisplay()">
+									<label for="selCat_2" class="rchk_label txt rd">즉시주문</label>
+								</li>
+								<li class="select">
+									<select name="selCat" id="selCat" class="select_basic">
+										<option value="적용기간">적용기간</option>
+										<option value="이용안함">이용안함</option>
+										<option value="1">+1일</option>
+										<option value="2">+2일</option>
+										<option value="3">+3일</option>
+										<option value="4">+4일</option>
+										<option value="5">+5일</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 협의주문 선택시 -->
+						<div class="opt_con option_1">
+							<ul>
+								<li>
+									<input type="checkbox" name="opt_chk" id="opt_chk_1" class="chk txt">
+									<label for="opt_chk_1" class="chk_label txt">가격 협의 가능</label>
+								</li>
+								<li>
+									<input type="checkbox" name="opt_chk" id="opt_chk_2" class="chk txt">
+									<label for="opt_chk_2" class="chk_label txt">수량 협의 가능</label>
+								</li>
+								<li>
+									<input type="checkbox" name="opt_chk" id="opt_chk_3" class="chk txt">
+									<label for="opt_chk_3" class="chk_label txt">주문마감</label>
+									<select name="selCat2" id="selCat2" class="select_basic">
+										<option value="적용기간">적용기간</option>
+										<option value="이용안함">이용안함</option>
+										<option value="3">+3일</option>
+										<option value="7">+7일</option>
+										<option value="10">+10일</option>
+										<option value="30">+30일</option>
+										<option value="60">+60일</option>
+									</select>
+								</li>
+							</ul>
+							<p class="ext">- 등록일로 부터 설정된 날짜가 지나면 주문이 자동으로 철회 됩니다.</p>
+						</div><!-- option_1 -->
+						
+						<!-- 즉시주문 선택시 -->
+						<div class="opt_con option_2">
+							<input type="checkbox" name="agree_chk" id="agree_chk" class="chk txt">
+							<label for="agree_chk" class="chk_label txt"><span class="up">[필수]</span> 유의사항을 확인 하였습니다.</label>
+							<p class="ext">
+							    -  게시자의 별도 확인 없이 즉시 거래가 됩니다.<br>
+								-  영업일 기준 09:00~16:00에만 가능하며, 16:00 이후 거래는<br>
+								&nbsp;&nbsp;익영업일 09:00에 체결이 됩니다.<br>
+								-  적용기간이 지나면 자동으로 주문은 철회가 됩니다.<br>
+								-  최대거래금액 2,000만원 이하인 경우에만 적용 가능 합니다.<br>
+							</p>
+						</div><!-- option_2 -->
+					</div><!-- inner -->
+				</div>
+				<!-- [e] 선택폼 -->
+
+				<div id="dealBtn" class="fix_bot"><a href="javascript:popupOpen('.layer_register');">게시글 등록</a></div>
+
+			</div>
+			<!-- [e] 기업정보 -->
+		</div><!-- sub_contents -->
+		
+	</section>
+	<!-- [e] container -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 추정 시가총액  -->
+	<div class="ly_content layer_register">
+		<div class="ly_cont">
+			<div class="layer reg_pop infit">
+				<div class="tit_top">등록확인</div>
+				<div class="cont">
+					<dl>
+						<dt>거래종류</dt>
+						<dd class="down">매도하기</dd>
+						<dt>종목명</dt>
+						<dd>카카오뱅크</dd>
+						<dt>종목코드</dt>
+						<dd>323410</dd>
+						<dt>수량</dt>
+						<dd>10 주</dd>
+						<dt>주당가격</dt>
+						<dd>74,500 원</dd>
+						<dt>총 금액</dt>
+						<dd>745,000 원</dd>
+						<dt>유형</dt>
+						<dd>협의주문</dd>
+					</dl>
+					<ul>
+						<li>당 서비스는 이용자 간 거래에 일체 개입하지 않으며, 거래에 대한 손익책임은 투자자 본인에게 있습니다.</li>
+						<li>당 서비스는 어떠한 경우에도 특정 종목에 대한 투자를 추천하거나 공유하지 않습니다.</li>
+						<li>발행사의 사전 증권신고서 제출없이 대통령령으로 정한 금액이상의 비상장주식을 매도하는 행위 등은 자본시장법 제 119조 등에 대한 위헌에 해당할 수 있습니다.</li>
+					</ul>
+				</div>
+				<div class="btn_area w2">
+					<a href="javascript:popupClose('.layer_register');" class="btn_pop">취소</a>
+					<a href="javascript:popupClose('.layer_register');" class="btn_pop">확 인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 추정 시가총액 -->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/publish.js"></script>
+<script>
+//증감
+$(function(){
+	$('.decreaseQuantity').click(function(e){
+		e.preventDefault();
+		var stat = $(this).parents(".number").find(".numberUpDown").val();
+		var num = parseInt(stat,10);
+		num--;
+		if(num<=0){
+			alert('더이상 줄일수 없습니다.');
+			num =1;
+		}
+		$(this).parents(".number").find(".numberUpDown").val(num);
+	});
+	$('.increaseQuantity').click(function(e){
+		e.preventDefault();
+		var stat = $(this).parents(".number").find(".numberUpDown").val();
+		var num = parseInt(stat,10);
+		num++;
+
+		if(num>9999){
+			alert('더이상 늘릴수 없습니다.');
+			num=5;
+		}
+		$(this).parents(".number").find(".numberUpDown").val(num);
+	});
+});
+
+//유형선택
+function setDisplay(){
+    if($('input:radio[id=selCat_1]').is(':checked')){
+        $('.option_check .select').removeClass('on');
+		$('.option_1').show();
+		$('.option_2').hide();
+    }else{
+        $('.option_check .select').addClass('on');
+		$('.option_1').hide();
+		$('.option_2').show();
+    }
+}
+</script>
+
+</body>
+</html>

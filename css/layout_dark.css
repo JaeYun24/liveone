@@ -1,0 +1,149 @@
+/*-------------------------------------------------------------------
+    파일정의 : 테마형식 (DARK)
+-------------------------------------------------------------------*/
+
+.dark_effect{position:fixed;right:0;top:0;width:100%;height:100%;z-index:-1;}
+.dark_effect span{display: block;position:absolute;right:-100%;top:-100%;width:156vw;height:156vw;background:#111;border-radius:100%;opacity:0;transition:all 2s}
+.dark_theme .dark_effect{right:0;top:0;z-index:9995;}
+.dark_theme .dark_effect span{right:-80%;top:-70%;width:500vw;height:500vw;opacity:1;}
+
+.light_effect{position:fixed;right:0;top:0;width:100%;height:100%;z-index:-1;}
+.light_effect span{display: block;position:absolute;right:-100%;top:-100%;width:156vw;height:156vw;background:#fff;border-radius:100%;opacity:0;transition:all 2s}
+.light_theme .light_effect{right:0;top:0;z-index:9995;}
+.light_theme .light_effect span{right:-80%;top:-70%;width:500vw;height:500vw;opacity:1;}
+
+.dark_theme body{background:#1F2630;}
+.dark_theme a{color:#fff !important;}
+.dark_theme .fix_menu{background:#1F2630;border-top: 1px solid #1F2630;}
+.dark_theme #loading{background:#1F2630;}
+
+body, .fix_menu,#header, .bg_gray,.bx_wht, .setting_wp ul,.setting_wp li,.setting_wp li *, .main_issue .issue_slide,.bx_wht,.bg_wht,
+.main_issue .issue_slide, .stock_list .list_tab, .stock_list .list_tab h2,.stk_tb_list .tb_tit, .main_hot .hot_scr .sld a
+{transition:all 1s;}
+
+.dark_theme #header, .dark_theme .setting_wp ul{background-color:#1F2630 !important;}
+.dark_theme .bg_gray{background-color:#1F2630 !important;}
+.dark_theme .bx_wht, .dark_theme .main_issue .issue_slide, .dark_theme .bg_wht{background-color:#313742 !important;border-color:#222 !Important;}
+.dark_theme .main_hot .hot_scr .sld a{border-color:#606975 !important;}
+
+.dark_theme .setting_wp li *, .dark_theme .main_issue .issue_slide *, .dark_theme .main_stock > div h3,  .dark_theme .main_hot h2,.dark_theme .stk_tb_list .tb_con li .tit p,
+.dark_theme .stk_tb_list .tb_con li.none > .none_cont *{color:#fff !important;}
+.dark_theme .stk_tb_list .tb_con li.none > .none_cont .ntxt b{color:#ffd200 !important;}
+.dark_theme .setting_wp li, .dark_theme .tab_cont .more_btn, .dark_theme .main_issue .issue_list h2{border-color:#555 !important;}
+.dark_theme .main_guide a::after{background-image: url('../img/ico_plus_wht.png');}
+.dark_theme .main_hot .hot_scr .sld .tit{color:#999;}
+.dark_theme .stock_list .list_tab{border-color:#313742 !important;}
+.dark_theme .stock_list .list_tab h2{color:#fff;border-color:#555;}
+.dark_theme .stock_list .list_tab li a.on{color:#4071e8 !important;}
+.dark_theme .stk_tb_list .tb_tit{border-bottom-color:#555;}
+.dark_theme .stock_list .tp_area.tag .tag_scr .cont a{background-color:#313742;border-color:#222;}
+.dark_theme .stk_tb_list .tb_con li .prc p{color:#fff;}
+.dark_theme .stock_list .tp_area.tag .tag_scr .cont a.on{background: #4071e8;}
+.dark_theme #header .search_wp{background:#313742;}
+.dark_theme .back_btn, .dark_theme #header .search_wp .ers_btn{opacity:0.5;}
+.dark_theme #header .back_btn span{color:#fff}
+.dark_theme #header .search_wp input[type=text]{color:#999;}
+
+.dark_theme .layer{background:#313742;border-color:#5c667b !important;}
+.dark_theme .layer *{border-color:#5c667b !important;color:#fff}
+.dark_theme .layer .btn_area .btn_pop{color:#fff;}
+
+/* 자산 */
+.property_top *,.property_pfo .chart_wp .apexcharts-legend-text,.property_pfo .chart_wp h3, .property_tb *{transition:all 1s;}
+.dark_theme .property_top .bank, .dark_theme .property_top .total li h3, .dark_theme .property_top .total li dl{color:#bbb;}
+.dark_theme .property_top .bank b,.dark_theme .property_top .total li dl dd,.dark_theme .property_top .total li .won,.dark_theme .property_pfo .chart_wp h3{color:#fff;}
+
+.dark_theme .property_pfo .chart_wp .apexcharts-legend-text{color:#fff !important;}
+.dark_theme .property_pfo .chart_wp .apexcharts-datalabels-group text{ fill: rgb(255, 255, 255) !important;}
+.dark_theme .property_pfo .chart_wp .apexcharts-legend-text span{color:#bbb !important;}
+.dark_theme .property_top .bank, .dark_theme .property_tb *{border-color:#888 !important;}
+.dark_theme .property_top .total li:first-child dl::after{border-color:#888 !important;opacity:0.2;}
+.dark_theme .property_tb .tb_con > li .sum li, .dark_theme .property_tb .tb_con > li .list dd{color:#fff;}
+.dark_theme .property_pfo .chart_wp .apexcharts-series path{ stroke: #394757 !important;}
+
+/* 종목 */
+.dark_theme .stock_con *{color:#fff;border-color:#5c667b !important;}
+.dark_theme .live_chart .chart_wp #chart, .dark_theme .stock_con .stk_top .tit .sns_list a{background:#313742}
+.dark_theme .stock_con .stk_top .tit b,.dark_theme .live_chart .legend span,.dark_theme .stk_board .bd_list li .tit,.dark_theme .chk.txt+.chk_label.txt,
+.dark_theme .align_list .list_con .bx .tit b, .dark_theme .align_list .list_con .bx .data li.cat_2 b, .dark_theme .stock_con .profile .name, .dark_theme .deal_con .dl_info .tit b,
+.dark_theme .deal_con .dl_info .info b, .dark_theme .stock_con .full_total b, .dark_theme .deal_con .dl_list h3, .dark_theme .deal_con .bx_txt ul li
+{color:#fff;}
+.dark_theme .stock_con .stk_top .prc .cp em,.dark_theme .stock_con .stk_top .month, .dark_theme .stock_con .stk_top .month span, .dark_theme .stock_con .ntxt,
+.dark_theme .stock_con .info_tb td, .dark_theme .trans_list .trans_tb td, .dark_theme .stock_con .stk_top .total *,.dark_theme .align_list .list_con .bx .data *,
+.dark_theme .layer.reg_pop .cont li
+{color:#bbb;}
+.dark_theme .stock_con .info_tb td.tt, .dark_theme .trans_list .trans_tb td.year{background:#5e697f;color:#e7e7e7;}
+.dark_theme .live_chart .chart_wp .bord::before, .dark_theme .live_chart .chart_wp .bord::after, .dark_theme .live_chart .chart_wp::before{border-color:#5c667b !important;}
+.dark_theme .bar_chart text{fill:rgb(255,255,255)}
+.dark_theme .align_list .list_top li div a.up i{color:#E61E09;}
+.dark_theme .align_list .list_top li div a.down i{color:#4071e8;}
+.dark_theme .align_list .list_con .bx .tit .tag span.qnt{border: 0.1vw solid #ff6755 !important;}
+.dark_theme .align_list .list_con .bx .tit .tag span.prc{border-color:#fff !important;color:#fff;}
+.dark_theme .align_list .list_con .bx .info, .dark_theme .deal_con .bx_txt ul, .dark_theme .layer.reg_pop .cont dl{background:#4b566c;}
+.dark_theme .reg_form .number input{color:#000;}
+.dark_theme .bar_chart  .apexcharts-legend-text{color:rgb(255,255,255) !important;}
+.dark_theme .ask_chart .chart_wp .price_top, .dark_theme .ask_chart .chart_wp .price_total{background:#3c4558;}
+.dark_theme .live_chart text{fill: rgb(255,255,255);}
+.dark_theme .live_chart .chart_wp #chart .apexcharts-tooltip span {color:#666 !important;}
+.dark_theme .live_chart .chart_wp #chart .apexcharts-tooltip span b{color:#666 !important;}
+.dark_theme .bar_chart .apexcharts-tooltip  {color:#666 !important;}
+.dark_theme .bar_chart .apexcharts-tooltip-title{color:#666 !important;}
+.dark_theme .bar_chart .apexcharts-tooltip span{color:#666 !important;}
+.dark_theme .align_list.debate_list .list_con .bx *{color:#fff !important;}
+.dark_theme .deal_con .db_view *, .dark_theme .cmt_list li *{color:#fff;}
+.dark_theme input[type=text], .dark_theme input[type=password], .dark_theme textarea{background:#4b566c !important}
+
+/* 시장 */
+.dark_theme .market_wp h2, .dark_theme .mk_board .bd_list .list_con li .tit, .dark_theme .mk_top dd span{color:#fff;}
+.dark_theme .mk_board .bd_list .list_con li .date{color:#bbb;}
+.dark_theme .black_col{color:#fff !important;}
+
+/* 로그인 */
+.dark_theme .login_wp *{color:#fff !important;}
+.dark_theme .login_wp .login_btn *{color:#222 !important;}
+.dark_theme .login_form h1{color:#fff;}
+.dark_theme .login_form *{border-color:#5c667b;}
+.dark_theme .login_form .login_btn .login{background:#5c667b;color:#fff;}
+
+/* 거래 */
+.dark_theme #header h2{color:#fff;}
+.dark_theme .option_check > .rt{color:#aaa;}
+.dark_theme .trans_con .trs_list .align_list .list_con .bx .tit .tt, .dark_theme .trans_con .trs_list .profile .name{color:#fff;}
+.dark_theme .trans_con .trs_list .bx{border-color:#5c667b !important;}
+.dark_theme .red{color:#E61E09 !important;}
+.dark_theme .chat_wp .cht_top{background:#313742 ;border-color:#5c667b !important;}
+.dark_theme .chat_wp .cht_top *,.dark_theme  .chat_wp .cht_con .profile .name{color:#fff;}
+.dark_theme .chat_wp .cht_con .left  .bubble .cont{background:#4b566c;border-color:#4b566c !important;}
+.dark_theme .chat_wp .cht_con .left .bubble::before,.dark_theme .chat_wp .cht_con .left  .bubble .cont::after{background:#4b566c;border-color:#4b566c !important;}
+.dark_theme .chat_wp .cht_con .left  .bubble .cont .txt{color:#fff;}
+.dark_theme .chat_wp .cht_con .exp_txt{color:#aaa;}
+.dark_theme .align_list .list_con .bx .info .state .cmt{color:#fff;}
+.dark_theme .align_list .list_con .none *{color:#fff;}
+.dark_theme .trans_con .trs_list .align_list.trs_end .list_con .bx{background:#4b566c;border-color:#4b566c !important;}
+.dark_theme .trans_con .trs_list .align_list.trs_end .list_con .bx .data li.cat_3.tot{color:#999;}
+.dark_theme .trans_con .trs_list .align_list.trs_end .list_con .bx .data li.cat_3.tot b{color:#fff;}
+.dark_theme .trans_con .trs_list .align_list .list_con .bx .info.top .state .stt{color:#fff;}
+
+/*내정보*/
+.dark_theme .mypage_wp *, .dark_theme  .mypage_wp .myp_top h3, .dark_theme  .mypage_wp .myp_con h3, .dark_theme .mypage_wp .myp_top .profile .info dt,
+.dark_theme .mypage_wp .link_btn li .tt
+{color:#fff;}
+.dark_theme .mypage_wp .myp_top, .dark_theme .mypage_wp .myp_con{background-color:#313742 !important;border-color:#222 !Important;}
+.dark_theme .mypage_wp .link_btn li a, .dark_theme .mypage_wp .myp_con .faq_list li{border-color:#5c667b !important;}
+.dark_theme .mypage_wp .myp_con .not_list li{border-color:#5c667b !important;background:#5c667b;}
+.dark_theme .mypage_wp .myp_con .not_list li span{color:#aaa;}
+.dark_theme .mypage_wp .myp_con .link_btn li:last-child a{background:#fff;}
+.dark_theme .layer_edit .layer.norm_pop dl *{color:#fff;}
+.dark_theme .layer_edit .layer.norm_pop dl input{color:#fff;}
+
+/*설정*/
+.dark_theme .app_setting  *{color:#fff;}
+.dark_theme .app_setting h2{border-bottom:1px solid #4b566c;background:#313742 ;}
+.dark_theme .app_setting .set_list {border-bottom:1px solid #4b566c;}
+.dark_theme .app_setting .set_list li{background:#4b566c;}
+.dark_theme .app_setting .set_list li:nth-child(even){background:#313742 ;}
+.dark_theme .app_setting .set_list li .tt{color:#fff;}
+.dark_theme .app_setting .set_list li .st{opacity:0.7;}
+.dark_theme .cond_cont{background:#313742 ;border-top:1px solid #313742 ;}
+.dark_theme .cond_cont .cont a{border:1px solid #4b566c;}
+.dark_theme .cond_cont h2{border:0;}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	
+	<!-- [s] header -->
+	<header id="header">
+		<a href="javascript:history.back();" class="back_btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><span>이전페이지</span></a>
+	</header>
+	<!-- [e] header -->
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents">
+			<!-- [s] 거래 -->
+			<div class="trans_con bg_gray">
+				<!-- [s] 채팅 -->
+				<div class="chat_wp sell">
+					<div class="cht_top">
+						<div class="b_inner">
+							<span class="tag sell">매도하기</span>
+							<span class="tit">카카오뱅크</span>
+							<span class="date">500<em>주</em></span>
+							<span class="won">1,258,790<em>원</em></span>
+						</div><!-- b_inner -->
+					</div><!-- cht_top -->
+					<div class="cht_con">
+						<div class="b_inner">
+							<ul>
+								<li class="left">
+									<div class="profile">
+										<div class="photo" style="background:url('../img/img_prof.png') no-repeat center center;"></div>
+										<span class="name">겨울앤아이</span>
+									</div><!-- profile -->
+									<div class="bubble">
+										<div class="cont">
+											<div class="txt">
+												아래와 같이 제시된 조건으로 거래 희망합니다.<br>
+												(가격, 수량 협의 가능합니다.)<br>
+												종목 : <b>카카오뱅크 03415</b><br>
+												가격 : <b>85,000원</b><br>
+												수량 : <b>1,000주</b><br>
+												총 금액 : <b>85,000,000원</b>
+											</div>
+										</div>
+										<span class="ex"><b></b><span class="date">23:19</span></span>
+									</div><!-- bubble -->
+								</li>
+								<li class="right">
+									<div class="bubble">
+										<span class="ex"><b>1</b><span class="date">23:19</span></span>
+										<div class="cont">
+											<div class="txt">
+												10주 / 주당 1,587,990원 조건으로 매수 희망합니다.
+											</div>
+										</div>
+										
+									</div><!-- bubble -->
+								</li>
+
+							</ul>
+						</div><!-- b_inner -->
+					</div><!-- cht_con -->
+				</div>
+				<!-- [e] 채팅 -->
+				<div class="fix_bot w2 infit">
+					<a href="#" class="bg_dis">협의취소</a>
+					<a href="javascript:alertOpen('.layer_cond');" class="bg_blue">협의 요청하기</a>
+				</div>
+			</div>
+			<!-- [e] 거래 -->
+		</div><!-- sub_contents -->
+		
+	</section>
+	<!-- [e] container -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+
+	<!-- [s] 매수금액 입력 -->
+	<div class="ly_content layer_cond">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="tit_top">조건협의 <a href="javascript:alertClose('.layer_cond');"><img src="../img/pop_close.png" alt="닫기"></a></div>
+				<div class="cont cond">
+					<div class="reg_form">
+						<div class="number">
+							<label for="numInp_1">수량</label>
+							<input type="text" name="numInp_1" class="numberUpDown input_basic tar" value="1"><span>주</span>
+							<div class="btn">
+								<a href="javascript:void(0);" class="decreaseQuantity">-</a>
+								<a href="javascript:void(0);" class="increaseQuantity">+</a>
+							</div>
+						</div>
+						<div class="number">
+							<label for="numInp_2">가격</label>
+							<input type="text" name="numInp_2" class="numberUpDown input_basic tar" value="1"><span>원</span>
+							<div class="btn">
+								<a href="javascript:void(0);" class="decreaseQuantity">-</a>
+								<a href="javascript:void(0);" class="increaseQuantity">+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn_area w2">
+					<a href="javascript:alertClose('.layer_cond');" class="btn_pop bg_dis">취 소</a>
+					<button onclick="javascript:alertClose('.layer_cond');" class="btn_pop bg_dgr">제 시</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 매수금액 입력 -->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/publish.js"></script>
+<script>
+//증감
+$(function(){
+	$('.decreaseQuantity').click(function(e){
+		e.preventDefault();
+		var stat = $(this).parents(".number").find(".numberUpDown").val();
+		var num = parseInt(stat,10);
+		num--;
+		if(num<=0){
+			alert('더이상 줄일수 없습니다.');
+			num =1;
+		}
+		$(this).parents(".number").find(".numberUpDown").val(num);
+	});
+	$('.increaseQuantity').click(function(e){
+		e.preventDefault();
+		var stat = $(this).parents(".number").find(".numberUpDown").val();
+		var num = parseInt(stat,10);
+		num++;
+
+		if(num>9999){
+			alert('더이상 늘릴수 없습니다.');
+			num=5;
+		}
+		$(this).parents(".number").find(".numberUpDown").val(num);
+	});
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	
+	<!-- [s] header -->
+	<header id="header">
+		<h2>거래</h2>
+	</header>
+	<!-- [e] header -->
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents">
+			<!-- [s] 거래 -->
+			<div class="trans_con bg_gray">
+				<!-- [s] 거래중 -->
+				<div class="trs_top bg_wht">
+					<div class="inner">
+						<div class="tab_btn w3 infit">
+							<a href="index.html" class="on">거래중</a>
+							<a href="myboard.html">내 게시글</a>
+							<a href="trans_end.html">거래완료</a>
+
+						</div><!-- tab_btn -->
+						<div class="option_check infit">
+							<ul>
+								<li>
+									<input type="checkbox" name="opt_chk" id="opt_chk_1" class="chk txt">
+									<label for="opt_chk_1" class="chk_label txt">진행중</label>
+								</li>
+							</ul>
+							<span class="rt">최근 30일 기준</span>
+						</div>
+					</div><!-- inner -->
+				</div><!-- trs_top -->
+				<div class="trs_list bg_wht">
+					<div class="inner">
+						<div class="sell_list align_list infit">
+							<div class="list_con">
+								<div class="bx" onclick="location.href='sell_chat.html'">
+									<div class="tit">
+										<div class="info top">
+											<div class="state">
+												<span class="stt up"><i class="fa fa-undo" aria-hidden="true"></i>거래중</span>
+											</div>
+											<div class="profile">
+												<div class="photo" style="background:url('../img/img_prof.png') no-repeat center center;"></div>
+												<span class="name">스페이스X</span>
+											</div>
+										</div>
+										<div class="tag">
+											<span class="qnt">수량협의</span>
+										</div>
+										<div class="tt">카카오뱅크 <span class="tg sell">매도</span></div>
+									</div>
+									<ul class="data">
+										<li class="cat_1">매도가격 <b class="up">91,000<em>원</em></b></li>
+										<li class="cat_2">수량 <b>200<em>주</em></b></li>
+										<li class="cat_3">2021-06-21</li>
+									</ul>
+								</div>
+
+								<div class="bx" onclick="location.href='buy_chat.html'">
+									<div class="tit">
+										<div class="info top">
+											<div class="state">
+												<span class="stt up"><i class="fa fa-undo" aria-hidden="true"></i>거래중</span>
+											</div>
+											<div class="profile">
+												<div class="photo" style="background:url('../img/img_prof.png') no-repeat center center;"></div>
+												<span class="name">스페이스X</span>
+											</div>
+										</div>
+										<div class="tag">
+											<span class="prc">가격협의</span>
+											<span class="qnt">수량협의</span>
+										</div>
+										<div class="tt">카카오뱅크 <span class="tg buy">매수</span></div>
+									</div>
+									<ul class="data">
+										<li class="cat_1">매도가격 <b class="up">91,000<em>원</em></b></li>
+										<li class="cat_2">수량 <b>200<em>주</em></b></li>
+										<li class="cat_3">2021-06-21</li>
+									</ul>
+								</div>
+
+								<div class="bx cancel">
+									<div class="tit">
+										<div class="info top">
+											<div class="state">
+												<span class="stt"><i class="fa fa-undo" aria-hidden="true"></i>거래 취소</span>
+											</div>
+											<div class="profile">
+												<div class="photo" style="background:url('../img/img_prof.png') no-repeat center center;"></div>
+												<span class="name">스페이스X</span>
+											</div>
+										</div>
+										<div class="tt">카카오뱅크 <span class="tg buy">매수</span></div>
+									</div>
+									<ul class="data">
+										<li class="cat_1">매도가격 <b class="up">91,000<em>원</em></b></li>
+										<li class="cat_2">수량 <b>200<em>주</em></b></li>
+										<li class="cat_3">2021-06-21</li>
+									</ul>
+								</div>
+
+								<div class="bx" onclick="location.href='sell_chat.html'">
+									<div class="tit">
+										<div class="info top">
+											<div class="state">
+												<span class="stt up"><i class="fa fa-undo" aria-hidden="true"></i>거래중</span>
+											</div>
+											<div class="profile">
+												<div class="photo" style="background:url('../img/img_prof.png') no-repeat center center;"></div>
+												<span class="name">스페이스X</span>
+											</div>
+										</div>
+										<div class="tag">
+											<span class="qnt">수량협의</span>
+										</div>
+										<div class="tt">카카오뱅크 <span class="tg sell">매도</span></div>
+									</div>
+									<ul class="data">
+										<li class="cat_1">매도가격 <b class="up">91,000<em>원</em></b></li>
+										<li class="cat_2">수량 <b>200<em>주</em></b></li>
+										<li class="cat_3">2021-06-21</li>
+									</ul>
+								</div>
+
+								<div class="bx" onclick="location.href='buy_chat.html'">
+									<div class="tit">
+										<div class="info top">
+											<div class="state">
+												<span class="stt up"><i class="fa fa-undo" aria-hidden="true"></i>거래중</span>
+											</div>
+											<div class="profile">
+												<div class="photo" style="background:url('../img/img_prof.png') no-repeat center center;"></div>
+												<span class="name">스페이스X</span>
+											</div>
+										</div>
+										<div class="tag">
+											<span class="prc">가격협의</span>
+										</div>
+										<div class="tt">카카오뱅크 <span class="tg buy">매수</span></div>
+									</div>
+									<ul class="data">
+										<li class="cat_1">매도가격 <b class="up">91,000<em>원</em></b></li>
+										<li class="cat_2">수량 <b>200<em>주</em></b></li>
+										<li class="cat_3">2021-06-21</li>
+									</ul>
+								</div>
+							</div><!-- list_con -->
+						</div><!-- sell_list -->
+					</div><!-- inner -->
+				</div><!-- trs_list -->
+				<!-- [e] 거래중 -->
+			</div>
+			<!-- [e] 거래 -->
+		</div><!-- sub_contents -->
+		
+	</section>
+	<!-- [e] container -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] fixMenu -->
+<div id="fixMenu" class="infit">
+	<iframe src="../menu.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+</div>
+<!-- [e] fixMenu -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 추정 시가총액  -->
+	<div class="ly_content layer_total">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="tit_top">추정 시가총액</div>
+				<div class="cont">
+					시가총액은 총 발행 주식수와 현재가를 곱한 값입니다. <br>
+					거래 이용시 참고용으로만 이용 부탁드립니다. 
+				</div>
+				<div class="btn_area"><a href="javascript:popupClose('.layer_total');" class="btn_pop">확 인</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 추정 시가총액 -->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/publish.js"></script>
+
+</body>
+</html>

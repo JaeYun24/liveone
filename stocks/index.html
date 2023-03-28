@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	
+	<!-- [s] header -->
+	<header id="header">
+		<a href="javascript:history.back();" class="back_btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><span>이전페이지</span></a>
+	</header>
+	<!-- [e] header -->
+
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents">
+			<!-- [s] 기업정보 -->
+			<div class="stock_con bg_gray">
+				<!-- [s] 종목상단 -->
+				<div class="stk_top bg_wht">
+					<div class="b_inner">
+						<div class="tit">
+							<b>카카오뱅크</b><i class="fa fa-star on"></i><a href="ask_stock.html" class="rbtn">호가창 보기</a><span class="num">323410</span>
+							<div class="sns_share">
+								<a href="javascript:void(0);"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+								<div class="sns_list">
+									<a href="#"><i class="fa fa-comment" aria-hidden="true"></i>카카오</a>
+									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>인스타</a>
+									<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>문자</i></a>
+								</div>
+							</div>
+						</div><!-- tit -->
+						<a href="javascript:popupOpen('.layer_total');" class="total"><i class="fa fa-question-circle-o"></i><span>시가총액 30조 3,702억원</span></a>
+						<div class="prc up">
+							<b class="tt up">91,000</b><span class="won up">원</span>
+							<span class="cp"><em>전일대비</em> </span>0.67% <i class="fa fa-caret-up"></i> +500</span>
+						</div>
+						<div class="month">최근30일 기준 : <span>고가 <b class="up">75,000</b>원</span> <span>저가 <b class="down">60,000</b>원</span></div>
+					</div><!-- b_inner -->
+				</div>
+				<!-- [e] 종목상단 -->
+
+				<!-- [s] 종목정보 -->
+				<div class="stk_con bg_wht">
+					<div class="inner">
+						<div class="tab_btn infit">
+							<a class="on">기업정보</a>
+							<a href="selling.html">매도하기</a>
+							<a href="buying.html">매수하기</a>
+							<a href="debate.html">종목토론</a>
+						</div><!-- tab_btn -->
+						<div class="s_inner ntxt">카카오뱅크(카뱅)으로 잘 알려진 인터넷전문은행. 2019년 말 기 준 <br>여수신 상품, 대출, 카드 등 금융 상품 판매 중개 중심.</div>
+						<div class="info_tb">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							  <tr>
+								<td width="18%" class="tt">대표이사</td>
+								<td width="32%">윤호영</td>
+								<td width="18%" class="tt">설립년도</td>
+								<td width="32%">2016.01.22</td>
+							  </tr>
+							  <tr>
+								<td class="tt">업종</td>
+								<td colspan="3">은행 및 저축기관</td>
+							  </tr>
+							  <tr>
+								<td class="tt">전화</td>
+								<td>02.6288.6112</td>
+								<td class="tt">직원수</td>
+								<td>&nbsp;</td>
+							  </tr>
+							  <tr>
+								<td class="tt">홈페이지</td>
+								<td colspan="3">http://www.kakaobank.com</td>
+							  </tr>
+							  <tr>
+								<td class="tt">주소</td>
+								<td colspan="3">경기도 성남시 분당구 판교역로 231 에스동 5층</td>
+							  </tr>
+							  <tr>
+								<td class="tt">자본금</td>
+								<td>20,483억원</td>
+								<td class="tt">주권구분</td>
+								<td>통일주권</td>
+							  </tr>
+							</table>
+							<p class="gray_txt tar">데이터 제공 : NICE 디앤비</p>
+						</div><!-- info_tb -->
+						<a href="detail.html" class="det_btn"><span>자세히보기</span></a>
+					</div><!-- inner -->
+				</div>
+				<!-- [e] 종목정보 -->
+
+				<!-- [s] 라이브차트 -->
+				<div class="live_chart bg_wht">
+					<div class="inner">
+						<h2>LIVEONE 차트</h2>
+						<div class="chart_wp">
+							<span class="bord"></span>
+							<div id="chart"></div><!-- scatter 차트 -->
+							<div id="chart2"></div><!-- 막대그래프 차트 -->
+						</div><!-- chart_wp -->
+						<div class="legend">
+							<span class="lg_1">실거래가</span>
+							<span class="lg_2">현재시세</span>
+							<span class="lg_3">유통추정정보</span>
+						</div>
+						<p class="gray_txt tar">자료제공 : SEIbro</p>
+					</div><!-- inner -->
+				</div>
+				<!-- [e] 라이브차트 -->
+	
+				<!-- [s] 거래완료 -->
+				<div class="trans_list bg_wht">
+					<div class="inner">
+						<h2>거래완료 <span class="gray_txt rt">기준 : 21.05.01</span></h2>
+						<div class="trans_tb">
+							<table width="100%" border="0" cellspacing="1" cellpadding="1">
+							  <tr class="thead">
+								<td width="20%">년도</td>
+								<td width="30%">계약월</td>
+								<td width="50%" class="tal">거래가</td>
+							  </tr>
+							  <tr>
+								<td rowspan="2" class="year">2021</td>
+								<td>04</td>
+								<td class="tal">
+									74,500원 (22일, 10주)<br>
+									74,000원 (22일, 10주)<br>
+									73,500원 (8일, 20주)
+								</td>
+							  </tr>
+							  <tr>
+								<td>03</td>
+								<td class="tal">
+									74,500원 (22일, 10주)<br>
+									74,000원 (22일, 10주)<br>
+									73,500원 (8일, 20주)
+								</td>
+							  </tr>
+							  <tr>
+								<td class="year">2020</td>
+								<td>12</td>
+								<td class="tal">
+									74,500원 (22일, 10주)<br>
+									74,000원 (22일, 10주)<br>
+									73,500원 (8일, 20주)
+								</td>
+							  </tr>
+							</table>
+						</div>
+						<a href="#" class="det_btn"><span>더보기</span></a>
+					</div>
+				</div>
+				<!-- [e] 거래완료 -->
+
+				<!-- [s] 게시판 -->
+				<div class="stk_board bg_wht">
+					<div class="inner">
+						<div class="tab_btn infit">
+							<a href="#" class="on">인기검색</a>
+							<a href="#">뉴스</a>
+							<a href="#">공시</a>
+						</div><!-- tab_btn -->
+						<div class="bd_list">
+							<ul>
+								<li>
+									<span class="tag">공시</span>
+									<p class="tit">대규모 기업 집단 현황 공시 [연1회공시및 1/4분기용(개별회사)]</p>
+									<div class="etc"><span>금강원공시</span><span>21.05.31 17:00</span></div>
+									<span class="bank">카카오뱅크</span>
+								</li>
+								<li>
+									<span class="tag">공시</span>
+									<p class="tit">대규모 기업 집단 현황 공시 [연1회공시및 1/4분기용(개별회사)]</p>
+									<div class="etc"><span>금강원공시</span><span>21.05.31 17:00</span></div>
+									<span class="bank">카카오뱅크</span>
+								</li>
+							</ul>
+						</div><!-- bd_list -->
+					</div><!-- inner -->
+				</div>
+				<!-- [e] 게시판 -->
+
+			</div>
+			<!-- [e] 기업정보 -->
+		</div><!-- sub_contents -->
+		
+	</section>
+	<!-- [e] container -->
+
+	<!-- [s] fixMenu -->
+	<div id="fixMenu" class="infit">
+		<a href="javascript:void(0);" class="menu_1 on"><span class="icon animated"></span>홈</a>
+		<a href="javascript:void(0);" class="menu_2"><span class="icon animated"></span>뉴스</a>
+		<a href="javascript:void(0);" class="menu_3"><span class="icon animated"></span>시장</a>
+		<a href="javascript:void(0);" class="menu_4"><span class="icon animated"></span>거래</a>
+		<a href="javascript:void(0);" class="menu_5"><span class="icon animated"></span>자산</a>
+	</div>
+	<!-- [e] fixMenu -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 추정 시가총액  -->
+	<div class="ly_content layer_total">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="tit_top">추정 시가총액</div>
+				<div class="cont">
+					시가총액은 총 발행 주식수와 현재가를 곱한 값입니다. <br>
+					거래 이용시 참고용으로만 이용 부탁드립니다. 
+				</div>
+				<div class="btn_area"><a href="javascript:popupClose('.layer_total');" class="btn_pop">확 인</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 추정 시가총액 -->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/apexcharts.js"></script>
+<script type="text/javascript" src="../js/publish.js"></script>
+
+<script>
+//라이브차트
+var options = {
+  series: [{
+  name: 'Points',
+  type: 'scatter',
+  
+  //2.14, 2.15, 3.61, 4.93, 2.4, 2.7, 4.2, 5.4, 6.1, 8.3
+  data: [{
+		x: 1,
+		y: 2.14
+	  }, {
+		x: 1.2,
+		y: 2.19
+	  }, {
+		x: 1.8,
+		y: 2.43
+	  }, {
+		x: 2.3,
+		y: 3.8
+	  }, {
+		x: 2.6,
+		y: 4.14
+	  }, {
+		x: 2.9,
+		y: 2.4
+	  }, {
+		x: 3.2,
+		y: 3.8
+	  }, {
+		x: 3.8,
+		y: 3.04
+	  }, {
+		x: 4.55,
+		y: 1.77
+	  }, {
+		x: 4.9,
+		y:2.1
+	  }, {
+		x: 5.1,
+		y: 4.4
+	  }, {
+		x: 7.1,
+		y: 3.14
+	  },{
+		x: 8.18,
+		y: 4.4
+	  }]
+	}, {
+	name: 'Line',
+	type: 'area',
+	data: [{
+		x: 1,
+		y: 1.2
+	  }, {
+		x: 2,
+		y: 1.5
+	  }, {
+		x: 3,
+		y: 1.3
+	  }, {
+		x: 4,
+		y: 1.8
+	  }, {
+		x: 5,
+		y: 2.1
+	  }, {
+		x: 6,
+		y: 1.5
+	  }, {
+		x: 7,
+		y: 1.2
+	  }, {
+		x: 8,
+		y: 2.1
+	  }, {
+		x: 9,
+		y: 1.8
+	  }, {
+		x: 10,
+		y: 2.2
+	  }]
+	}],
+	chart: {
+	  height: 200,
+	  type: 'line',
+	},
+	markers: {
+	  size: [3, 0],
+	  strokeWidth: 0,
+	  strokeOpacity: 0
+	},
+	colors: ["#e60607","#e60607"],
+	stroke: {width: 2},
+	fill: {
+		colors: ["#1fbb00","#ffced1"],
+		type: ['solid', 'gradient'],
+          gradient: {
+			shade: 'light',
+			type: "vertical",
+            shadeIntensity: 0,
+			gradientToColors: ['#fff4f5', ''],
+            inverseColors: false,
+            opacityFrom: 1,
+            opacityTo: 0.3,
+            stops: [0, 100]
+          }
+	},
+	legend: {
+	  show: false
+	},
+	xaxis: {
+	  type: 'numeric',
+	  max: 10,
+	  tickAmount: 5,
+	  tickPlacement: 'on',
+	  tooltip: {
+          enabled: false
+      },
+	  labels: {
+          show: true,
+          maxHeight: 20
+      },
+	  crosshairs: {
+          show: true,
+          width: 1,
+          position: 'back',
+          opacity: 0.9,        
+          stroke: {
+              color: '#ff0000',
+              width: 1,
+              dashArray: 0,
+          }
+      
+      }
+	},
+	yaxis: {
+		show: true,
+		labels: {
+          show: false,
+          minWidth: 0,
+          maxWidth: 0
+        },
+		crosshairs: {
+          show: true,
+          width: 2,
+          position: 'back',
+          opacity: 0.9,        
+          stroke: {
+              color: '#ff0000',
+              width: 1,
+              dashArray: 0
+          }
+      
+      },
+	  tooltip: {
+          enabled: true,
+		  offsetX: -500
+      }
+
+	},
+	grid: {
+		  show: false
+	},
+	tooltip: {
+		offsetY: 20,
+		custom: function(opts) {
+		const xval =
+		  opts.ctx.w.config.series[opts.seriesIndex].data[
+			opts.dataPointIndex
+		  ].x
+		const value = opts.series[opts.seriesIndex][opts.dataPointIndex]
+		return '<span>' + xval + '</span>' + '<span><b>기준가:</b>' + value + '</span>'
+	  }
+	}
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+
+//막대그래프
+var options2 = {
+	colors: "#4071e8",
+	series: [{
+		  name: '기준가',
+		  data: [44, 55, 100, 56, 61, 58, 63, 60, 86,44, 55, 27, 56, 61, 58, 99, 60, 66, 60, 80]
+	  }],
+	  chart: {
+	  type: 'bar',
+	  height: 100
+	},
+	plotOptions: {
+	  bar: {
+		horizontal: false,
+		columnWidth: '90%',
+		borderRadius: 4
+	  },
+	},
+	dataLabels: {
+	  enabled: false
+	},
+	stroke: {
+	  show: false
+	},
+	grid: {
+		  show: false
+	},
+	xaxis: {
+	  categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9','10','11','12', '13', '14', '15', '16', '17', '18', '19', '20'],
+	  labels: {
+          show: false,
+		  maxHeight: 0
+	  },
+	  axisTicks: {
+          show: false
+      },
+	  crosshairs: {
+          show: true,
+          width: 1,
+          position: 'back',
+          opacity: 0.9,        
+          stroke: {
+              color: '#ff0000',
+              width: 1,
+              dashArray: 0,
+          }
+      
+      }
+	},
+	yaxis: {
+		show: false
+	},
+	fill: {
+	  opacity: 1
+	},
+	tooltip: {
+	   enabled: true
+	}
+};
+var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+chart2.render();
+</script>
+
+
+</body>
+</html>

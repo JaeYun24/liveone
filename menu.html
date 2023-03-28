@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/import.css">
+
+<script type="text/javascript" src="js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<div class="fix_menu infit">
+	<a href="javascript:void(0);" class="menu_1"><span class="icon animated"></span>홈</a>
+	<a href="javascript:void(0);" class="menu_2"><span class="icon animated"></span>뉴스</a>
+	<a href="javascript:void(0);" class="menu_3"><span class="icon animated"></span>시장</a>
+	<a href="javascript:void(0);" class="menu_4"><span class="icon animated"></span>거래</a>
+	<a href="javascript:void(0);" class="menu_5"><span class="icon animated"></span>자산</a>
+</div>
+
+<script>
+//탭 메뉴
+$(".fix_menu a").on('click', function () {
+	var idx = $(".fix_menu a").index($(this));
+	$(".fix_menu a").each(function(index){
+		if(idx == index){
+			$(this).addClass("on");
+			$(this).find("span").addClass("rubberBand")
+		}else{
+			$(this).removeClass("on");
+			$(this).find("span").removeClass("rubberBand")
+		}
+	});
+});
+
+//테마변경
+var darkMode;
+if (localStorage.getItem('dark-mode')) {  
+  // if dark mode is in storage, set variable with that value
+  darkMode = localStorage.getItem('dark-mode');  
+} else {  
+  // if dark mode is not in storage, set variable to 'light'
+  darkMode = 'light';  
+}
+
+// set new localStorage value
+localStorage.setItem('dark-mode', darkMode);
+
+
+if (localStorage.getItem('dark-mode') == 'dark') {
+  // if the above is 'dark' then apply .dark to the body
+  $('html').addClass('dark_theme');  
+  $("html").removeClass("light_theme");
+  $(".dark_effect").fadeOut(0);
+  $(".light_effect").fadeIn(1500);
+  $(".btg_btn a").addClass("on").prev().addClass("on")
+}
+
+// Toggle dark UI
+$(".btg_btn a").on('click', function () {
+	if(!$(this).hasClass("on")){
+		$(this).addClass("on").prev().addClass("on");
+		$("html").addClass("dark_theme");
+		$("html").removeClass("light_theme");
+		$(".dark_effect").fadeOut(1500);
+		$(".light_effect").fadeIn(1500);
+		localStorage.setItem('dark-mode', 'dark');
+	}else{
+		$(this).removeClass("on").prev().removeClass("on");;
+		$("html").removeClass("dark_theme");
+		$("html").addClass("light_theme");
+		$(".dark_effect").fadeIn(1500);
+		$(".light_effect").fadeOut(1500);
+		localStorage.setItem('dark-mode', 'light');
+	}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	
+	<!-- [s] header -->
+	<header id="header">
+		<h2>내정보</h2>
+	</header>
+	<!-- [e] header -->
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents">
+			<!-- [s] 내정보 -->
+			<div class="mypage_wp">
+				<div class="myp_top">
+					<div class="b_inner">
+						<h3>프로필 <a href="javascript:popupOpen('.layer_edit');" class="edit">수정하기</a></h3>
+						<div class="cont">
+							<div class="profile">
+								<div class="photo" style="background:url('../img/logo_gray.png') no-repeat center center;"></div>
+								<div class="info">
+									<dl>
+										<dt>닉네임</dt>
+										<dd>장외투자</dd>
+										<dt>회원번호</dt>
+										<dd>1234567</dd>
+									</dl>
+									<p class="safe">안심거래 인증</p>
+								</div>
+							</div><!-- profile -->
+							<div class="link_btn infit">
+								<ul>
+									<li>
+										<a href="#" class="disc"><img src="../img/ico_cmm.png" alt=""></a>
+										<p class="tt">토론글</p>
+									</li>
+									<li>
+										<a href="#" class="set"><img src="../img/ico_bset.png" alt=""></a>
+										<p class="tt">알림/앱설정</p>
+									</li>
+								</ul>
+							</div>
+						</div><!-- cont -->
+					</div><!-- b_inner -->
+				</div><!-- myp_top -->
+				<div class="myp_faq myp_con">
+					<div class="inner">
+						<h3>자주 묻는 질문 FAQ <a href="#"><img src="../img/ico_more.png" alt="더보기"></a></h3>
+						<ul class="faq_list">
+							<li><a href="#">서비스 수수료, 거래 시 세금 부과</a></li>
+							<li><a href="#">예수금 입금/출금 방법</a></li>
+							<li><a href="#">거래금액 제한</a></li>
+							<li><a href="#">구매한 종목 확인</a></li>
+							<li><a href="#">거래 가능한 종목 기준</a></li>
+						</ul>
+					</div><!-- inner -->
+				</div><!-- myp_faq -->
+				<div class="myp_notice myp_con">
+					<div class="inner">
+						<h3>공지사항 <a href="#"><img src="../img/ico_more.png" alt="더보기"></a></h3>
+						<ul class="not_list">
+							<li><a href="#">LIVE 비상장 서비스가 오픈되었습니다.</a>  <span>21/06/06</span></li>
+						</ul>
+						<div class="link_btn infit">
+							<ul>
+								<li>
+									<a href="#"><img src="../img/ico_myp_1.png" alt=""></a>
+									<p class="tt">투자유의안내</p>
+								</li>
+								<li>
+									<a href="#"><img src="../img/ico_myp_2.png" alt=""></a>
+									<p class="tt">고객센터</p>
+								</li>
+								<li>
+									<a href="#"><img src="../img/ico_myp_3.png" alt=""></a>
+									<p class="tt">서비스 정책</p>
+								</li>
+								<li>
+									<a href="#"><img src="../img/ico_myp_4.png" alt=""></a>
+									<p class="tt">토론방 정책</p>
+								</li>
+								<li>
+									<a href="#"><img src="../img/ico_myp_5.png" alt=""></a>
+									<p class="tt">유진투자증권</p>
+								</li>
+							</ul>
+						</div>
+					</div><!-- inner -->
+				</div><!-- myp_notice -->
+			</div>
+			<!-- [e] 내정보 -->
+		</div><!-- sub_contents -->
+		
+	</section>
+	<!-- [e] container -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] fixMenu -->
+<div id="fixMenu" class="infit">
+	<iframe src="../menu.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+</div>
+<!-- [e] fixMenu -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 프로필 수정 -->
+	<div class="ly_content layer_edit">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="tit_top">프로필 수정 <a href="javascript:popupClose('.layer_edit');"><img src="../img/pop_close.png" alt="닫기"></a></div>
+				<div class="cont">
+					<dl class="infit">
+						<dt>이름</dt>
+						<dd>강호동</dd>
+						<dt>전화번호</dt>
+						<dd>010-1235-1251</dd>
+						<dt>닉네임</dt>
+						<dd><input type="text" name="nick" ></dd>
+						<dt>이메일</dt>
+						<dd><input type="text" name="mail" ></dd>
+					</dl>
+				</div>
+				<div class="btn_area w2">
+					<a href="javascript:popupClose('.layer_edit');" class="btn_pop bg_dis">취 소</a>
+					<button onclick="javascript:popupClose('.layer_edit');" class="btn_pop bg_dgr">저 장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 프로필 수정 -->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/publish.js"></script>
+
+</body>
+</html>

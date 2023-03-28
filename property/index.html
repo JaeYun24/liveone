@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ko" class="main">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	
+	<!-- [s] header -->
+	<header id="header">
+		<a href="../mycash/my_cash.html" class="myc_btn">나의자산</a>
+		<a href="#" class="login_btn">로그인</a><!-- 로그인전일때만 노출 -->
+		<div class="rgnb">
+			<a href="javascript:void(0);" class="sc_btn"><img src="../img/ico_search.png" alt="검색"></a>
+			<a href="javascript:void(0);" class="ring_btn"><img src="../img/ico_ring.png" alt="알림"><em class="num">7</em></a>
+			<a href="javascript:void(0);" class="set_btn"><img src="../img/ico_set.png" alt="설정"></a>
+		</div>
+
+		<div class="setting_wp">
+			<ul>
+				<li class="theme">
+					<span class="tt">모드변경</span>
+					<div class="btg_btn"><span>테마</span><a href="javascript:void(0);" class=""></a></div>
+				</li>
+				<li><a href="#" class="set">앱 설정</a></li>
+				<li><a href="#" class="off">앱 종료</a></li>
+				<li><a href="#" class="logout">로그아웃</a></li>
+			</ul>
+		</div><!-- setting_wp -->
+	</header>
+	<!-- [e] header -->
+
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents bg_gray">
+			<!-- [s] my_property -->
+			<div id="my_property">
+				<div class="property_top bg_wht">
+					<h2>
+						나의자산 <a href="javascript:alertOpen('.layer_property');"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+						<span>21.05.01 15:00 완료 <a href="#"><i class="fa fa-repeat" aria-hidden="true"></i></a></span>
+					</h2>
+					<div class="bank">내 계좌 : <b>1234-5678-9-10 유진투자증권</b></div>
+					<div class="total infit">
+						<ul>
+							<li>
+								<h3>예수금</h3>
+								<p class="won">254,698</p>
+								<dl>
+									<dt>총매수금</dt>
+									<dd>5,000</dd>
+									<dt>총평가금</dt>
+									<dd>5,500</dd>
+								</dl>
+							</li>
+							<li>
+								<h3>총 보유자산</h3>
+								<p class="won">10,000,000</p>
+								<dl>
+									<dt>평가손익</dt>
+									<dd class="up">500</dd>
+									<dt>수익률</dt>
+									<dd class="up">10.00%</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div><!-- property_top -->
+
+				<div class="property_pfo bg_gray">
+					<div class="chart_wp bg_wht">
+						<h3>포트폴리오</h3>
+						<div id="chart"></div>
+					</div>
+				</div><!-- property_pfo -->
+				
+				<div class="property_tb bg_wht">
+					<ul class="tb_tit">
+						<li class="tit">종목명</li>
+						<li class="prc">현재가</li>
+						<li class="rate">변동률</li>
+					</ul>
+					<ul class="tb_con">
+						<li>
+							<div class="sum">
+								<ul>
+									<li class="tit">카카오뱅크</li>
+									<li class="prc up">91,000</li>
+									<li class="rate up"><span>+9.00%</span></li>
+								</ul>
+							</div>
+							<div class="list infit">
+								<dl>
+									<dt>보유량</dt>
+									<dd>1</dd>
+									<dt>평가금</dt>
+									<dd>300</dd>
+								</dl>
+								<dl>
+									<dt>매수가 </dt>
+									<dd>1,600 <a href="javascript:popupOpen('.layer_buying');"><img src="../img/ico_edit.png" alt="매수금액 입력"></a></dd>
+									<dt>매수금</dt>
+									<dd>300</dd>
+								</dl>
+								<dl class="total up">
+									<dd>433.33%</dd>
+									<dd>1,300</dd>
+								</dl>
+							</div>
+						</li>
+
+						<li>
+							<div class="sum">
+								<ul>
+									<li class="tit">크래프톤</li>
+									<li class="prc down">91,000</li>
+									<li class="rate down"><span>-9.00%</span></li>
+								</ul>
+							</div>
+							<div class="list infit">
+								<dl>
+									<dt>보유량</dt>
+									<dd>1</dd>
+									<dt>평가금</dt>
+									<dd>300</dd>
+								</dl>
+								<dl>
+									<dt>매수가 </dt>
+									<dd>1,600 <a href="javascript:popupOpen('.layer_buying');"><img src="../img/ico_edit.png" alt="매수금액 입력"></a></dd>
+									<dt>매수금</dt>
+									<dd>300</dd>
+								</dl>
+								<dl class="total down">
+									<dd>433.33%</dd>
+									<dd>1,300</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+					<div class="more_btn bg_gray"><a href="../search/search.html" tabindex="0">전체종목</a></div>
+				</div><!-- property_tb -->
+			</div>
+			<!-- [e] my_property -->
+		</div><!-- sub_contents -->
+	</section>
+	<!-- [e] container -->
+
+	<!-- [s] fixMenu -->
+	<div id="fixMenu" class="infit">
+		<a href="javascript:void(0);" class="menu_1 on"><span class="icon animated"></span>홈</a>
+		<a href="javascript:void(0);" class="menu_2"><span class="icon animated"></span>뉴스</a>
+		<a href="javascript:void(0);" class="menu_3"><span class="icon animated"></span>시장</a>
+		<a href="javascript:void(0);" class="menu_4"><span class="icon animated"></span>거래</a>
+		<a href="javascript:void(0);" class="menu_5"><span class="icon animated"></span>자산</a>
+	</div>
+	<!-- [e] fixMenu -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+<!-- [s] layer -->
+<div class="layer_wrap">
+	<!-- [s] 나의자산 도움말 (dim 없을시 alert) -->
+	<div class="ly_content layer_property">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="tit_top">나의자산</div>
+				<div class="cont">
+					예수금 : 내가 보유중인 현금<br>
+					매수금 : 비상장 주식을 매수한 금액<br>
+					평가금 : 보유한 비상장 주식의 현재가 기준금액<br>
+					평가손익 : 평가금 - 매수금<br>
+					수익률 : (평가손익 / 매수금) x 100
+				</div>
+				<div class="btn_area"><a href="javascript:alertClose('.layer_property');" class="btn_pop">확 인</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 나의자산 도움말 -->
+
+	<!-- [s] 매수금액 입력 -->
+	<div class="ly_content layer_buying">
+		<div class="ly_cont">
+			<div class="layer norm_pop infit">
+				<div class="tit_top">매수금액 <a href="javascript:popupClose('.layer_buying');"><img src="../img/pop_close.png" alt="닫기"></a></div>
+				<div class="cont">
+					<p class="tt">보유종목의 매수금액을 입력 및 수정하세요</p>
+					<dl class="infit">
+						<dt>매수금액</dt>
+						<dd><input type="text" name="buyNum" ><span>원</span></dd>
+					</dl>
+					<p class="ex">※ 매수금액에 따른 수익률은 참고용입니다.</p>
+				</div>
+				<div class="btn_area w2">
+					<a href="javascript:popupClose('.layer_buying');" class="btn_pop">취 소</a>
+					<button onclick="javascript:popupClose('.layer_buying');" class="btn_pop">저 장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 매수금액 입력 -->
+
+	<div class="ly_dim"></div>
+</div>
+<!-- [e] layer -->
+
+<script type="text/javascript" src="../js/apexcharts.js"></script>
+<script type="text/javascript" src="../js/publish.js"></script>
+
+<script>
+//나의자산차트
+var options = {
+  chart: {
+    type: "donut"
+  },
+  stroke: {
+      width: 2,
+	  colors: '#fff'
+    },
+  colors: ["#4071e8", "#fd7987", "#faacbc"],
+  dataLabels: {
+     enabled: true,
+	 style: {
+		  fontSize: '3vw'
+	 },
+	 background: {
+		enabled: true,
+		foreColor: '000',
+		opacity: 0
+	 },
+	 dropShadow: {
+		enabled: false
+	  },
+	  formatter: function(val) {
+        return val.toFixed(1)
+      }
+  },
+  labels: ['카카오뱅크','크래프트론','기타'],
+  series: [59.2, 30.6, 10.2],
+  plotOptions: {
+    pie: {
+      donut: {
+        size: '40%',
+		/*labels: {
+          show: true,
+          total: {
+            show: true,
+			fontSize: '12px',
+            label: '',
+            formatter: () => '비중(%)'
+          }
+        }*/
+		labels: {
+			show: true,
+			value: {
+			  show: true,
+			  fontSize: '12px',
+			  offsetY: -10
+			},
+			  total: {
+			  show: true,
+			  label: '',
+			  color: '#666',
+			  formatter: () => '비중(%)'
+
+			}
+		}
+      },
+      expandOnClick: true
+    }
+  },
+  tooltip: {
+    enabled: false
+  },
+  legend: {
+     show : true,
+	 fontWeight: 600,
+	 formatter: function(label, opts) {
+        return label + "<span> " + opts.w.globals.series[opts.seriesIndex] +  "%</span>"
+    }
+  }
+};
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+</script>
+</body>
+</html>

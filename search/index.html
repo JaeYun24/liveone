@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ko" class="main">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="title" content="라이브비상장" />
+<meta name="subject" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>라이브비상장</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../css/import.css">
+
+<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/libs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+</head>
+<body>
+
+<!-- [s] wrapper -->
+<div id="wrapper">
+
+	<!-- 로딩 -->
+	<div id="loading">
+		<div class="loader loader-7">
+		  <div class="line line1"></div>
+		  <div class="line line2"></div>
+		  <div class="line line3"></div>
+		</div>
+	</div><!-- // 로딩 -->
+
+	<div id="skipToContent" class="skipnav">
+		<a href="#container">본문 바로가기</a>
+	</div>
+
+	
+	<!-- [s] header -->
+	<header id="header">
+		<a href="javascript:history.back();" class="back_btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i><span>전체종목</span></a>
+		<!-- [s] 검색영역 -->
+		<div class="search_wp">
+			<a href="javascript:void(0);" class="sc_btn"><img src="../img/ico_search.png" alt="검색"></a>
+			<input type="text" name="search" placeholder="종목명·초성·코드 검색" class="sc_inp">
+			<a href="javascript:void(0);" class="ers_btn"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+		</div>
+		<!-- [e] 검색영역 -->
+	</header>
+	<!-- [e] header -->
+
+
+	<!-- [s] container -->
+	<section id="container">
+		<div class="sub_contents">
+			<!-- [s] 종목리스트 -->
+			<div class="stock_list bg_wht" >
+				<span id="stkloc"></span>
+				<div class="list_tab">
+					<h2>종목리스트</h2>
+					<ul class="infit">
+						<li><a href="#stkloc" data-id="1" ><span>인기검색</span></a></li>
+						<li><a href="#stkloc" data-id="2"><span>최근조회</span></a></li>
+						<li><a href="#stkloc" data-id="3"><span>관심종목</span></a></li>
+						<li class="all"><a href="#stkloc" data-id="4" class="on"><span>전체종목</span></a><em>33,000개</em></li>
+					</ul>
+				</div>
+
+				<div class="tp_area bg_gray" data-id="1">현재가는 참고용으로 실제 거래가격과 차이가 있을 수 있습니다.</div><!-- 인기검색 -->
+				<div class="tp_area bg_gray" data-id="2">현재가는 참고용으로 실제 거래가격과 차이가 있을 수 있습니다.</div><!-- 최근조회 -->
+				<div class="tp_area bg_gray" data-id="3">현재가는 참고용으로 실제 거래가격과 차이가 있을 수 있습니다.</div><!-- 관심종목 -->
+				<!-- 전체종목 태그 -->
+				<div class="tp_area bg_gray tag" data-id="4" style="display:block;">
+					<div class="tag_scr infit">
+						<div class="cont">
+							<a href="javascript:void(0);">#핀테크</a>
+							<a href="javascript:void(0);">#AI</a>
+							<a href="javascript:void(0);">#코로나</a>
+							<a href="javascript:void(0);">#바이오</a>
+							<a href="javascript:void(0);">#에이프로젠</a>
+							<a href="javascript:void(0);">#바디프랜드</a>
+						</div>
+					</div>
+				</div><!-- // 전체종목 태그 -->
+
+				<div class="tab_slide">
+					<!-- 인기검색 -->
+					<div class="tab_cont popular">
+						<div class="stk_tb_list infit">
+							<ul class="tb_tit">
+								<li class="tit">종목명/시가총액</li>
+								<li class="prc">현재가/변동률</li>
+								<li class="chart">차트</li>
+							</ul>
+							<ul class="tb_con">
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>지아이이노베이션</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>91,000</p><span>+0.8%</span></div>
+									<div class="chart"><div id="chart-area"></div></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바디프렌드</p><span>2조5,961억</span></div>
+									<div class="prc down"><p>2,654,000</p><span>-0.2%</span></div>
+									<div class="chart"><div id="chart-area2"></div></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>삼성전자</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>2,654,000</p><span>+0.5%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>오아시스</p><span>2조5,961억</span></div>
+									<div class="prc"><p>2,654,000</p><span>0%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>에이엘티</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>354,000</p><span>+0.2%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>메디셀</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>21,000</p><span>+0.2%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이오메디텍</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>1,654,000</p><span>+0.2%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>아이오컴퍼니</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p><span>+0.2%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이낸스</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p><span>+0.2%</span></div>
+									<div class="chart"></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이오 메디셀 프랜드</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p><span>+0.2%</span></div>
+									<div class="chart"></div>
+								</li>
+							</ul>
+						</div><!-- stk_tb_list -->
+					</div>
+					<!-- // 인기검색 -->
+
+					<!-- 최근조회 -->
+					<div class="tab_cont type2">
+						<div class="stk_tb_list infit">
+							<ul class="tb_tit">
+								<li class="tit">종목명/시가총액</li>
+								<li class="prc">현재가</li>
+								<li class="chart">변동률</li>
+							</ul>
+							<ul class="tb_con">
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>지아이이노베이션</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>91,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>바디프렌드</p><span>2조5,961억</span></div>
+									<div class="prc down"><p>91,000</p></div>
+									<div class="rate down"><span>-51.65%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>삼성전자</p><span>2조5,961억</span></div>
+									<div class="prc"><p>91,000</p></div>
+									<div class="rate"><span>0%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>오아시스</p><span>2조5,961억</span></div>
+									<div class="prc"><p>2,654,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>에이엘티</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>354,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>메디셀</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>21,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이오메디텍</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>1,654,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>아이오컴퍼니</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이낸스</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이오 메디셀 프랜드</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+							</ul>
+						</div><!-- stk_tb_list -->
+					</div>
+					<!-- // 최근조회 -->
+
+					<!-- 관심종목 -->
+					<div class="tab_cont type2">
+						<div class="stk_tb_list infit">
+							<ul class="tb_tit">
+								<li class="tit">종목명/시가총액</li>
+								<li class="prc">현재가</li>
+								<li class="chart">변동률</li>
+							</ul>
+							<ul class="tb_con">
+								<li class="none">
+									<!-- 컨텐츠 없을시 -->
+									<div class="none_cont">
+										<p class="ntit">내가 선택한 관심종목이 없습니다.</p>
+										<p class="ntxt">종목명 앞부분에 <b>★</b>별표모양을 클릭하시면<br>관심종목 선택이 완료 됩니다.</p>
+										<a href="../search/search.html">전체 종목 보기</a>
+									</div>
+								</li>
+							</ul>
+						</div><!-- stk_tb_list -->
+					</div>
+					<!-- // 관심종목 -->
+
+					<!-- 전체종목 -->
+					<div class="tab_cont type2">
+						<div class="stk_tb_list infit">
+							<ul class="tb_tit">
+								<li class="tit">종목명/시가총액</li>
+								<li class="prc">현재가</li>
+								<li class="chart">변동률</li>
+							</ul>
+							<ul class="tb_con">
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>지아이이노베이션</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>91,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>바디프렌드</p><span>2조5,961억</span></div>
+									<div class="prc down"><p>91,000</p></div>
+									<div class="rate down"><span>-51.65%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star on" aria-hidden="true""></i>
+									<div class="tit"><p>삼성전자</p><span>2조5,961억</span></div>
+									<div class="prc"><p>91,000</p></div>
+									<div class="rate"><span>0%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>오아시스</p><span>2조5,961억</span></div>
+									<div class="prc"><p>2,654,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>에이엘티</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>354,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>메디셀</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>21,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이오메디텍</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>1,654,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>아이오컴퍼니</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이낸스</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+								<li>
+									<i class="fa fa-star " aria-hidden="true""></i>
+									<div class="tit"><p>바이오 메디셀 프랜드</p><span>2조5,961억</span></div>
+									<div class="prc up"><p>312,000</p></div>
+									<div class="rate up"><span>+9.00%</span></div>
+								</li>
+							</ul>
+						</div><!-- stk_tb_list -->
+					</div>
+					<!-- // 전체종목 -->
+				</div>
+				<!-- // tab_slide -->
+				
+			</div>
+			<!-- [e] 종목리스트 -->
+
+		</div><!-- sub_contents -->
+		
+	</section>
+	<!-- [e] container -->
+
+	<!-- [s] fixMenu -->
+	<div id="fixMenu" class="infit">
+		<a href="javascript:void(0);" class="menu_1 on"><span class="icon animated"></span>홈</a>
+		<a href="javascript:void(0);" class="menu_2"><span class="icon animated"></span>뉴스</a>
+		<a href="javascript:void(0);" class="menu_3"><span class="icon animated"></span>시장</a>
+		<a href="javascript:void(0);" class="menu_4"><span class="icon animated"></span>거래</a>
+		<a href="javascript:void(0);" class="menu_5"><span class="icon animated"></span>자산</a>
+	</div>
+	<!-- [e] fixMenu -->
+
+	<!-- 테마효과 -->
+	<div class="dark_effect"><span></span></div>
+	<div class="light_effect"><span></span></div>
+</div>
+<!-- [e] wrapper -->
+
+<script type="text/javascript" src="../js/publish.js"></script>
+<script type="text/javascript" src="../js/ticker.js"></script>
+
+<script src="../js/apexcharts.js"></script>
+<script>
+//상승차트
+var options = {
+  chart: {
+	id: "chart",
+	type: "area",
+	foreColor: "#ccc",
+	toolbar: {show: false}
+  },
+  colors: ["#ff0000"],
+  stroke: {width: 1,curve: 'straight'},
+  grid: {show: false},
+  dataLabels: {enabled: false},
+  markers: { size: 0},
+  series: [
+	{
+		data: [
+		  {x: 1,y: 610},
+		  {x: 2,y: 590},
+		  {x: 3,y: 780},
+		  {x: 4,y: 600},
+		  {x: 5,y: 500},
+		  {x: 6,y: 400},
+		  {x: 7,y: 510},
+		  {x: 8,y: 490},
+		  {x: 9,y: 780},
+		  {x: 10,y: 600},
+		  {x: 11,y: 500},
+		  {x: 12,y: 620},
+		  {x: 13,y: 600},
+		  {x: 14,y: 490},
+		  {x: 15,y: 580},
+		  {x: 16,y: 500},
+		  {x: 17,y: 600},
+		  {x: 18,y: 550},
+		  {x: 19,y: 580}
+		]
+	}
+  ],
+  xaxis: {
+	show: false,
+	labels: {show: false},
+	axisBorder: {show: false},
+	axisTicks: {show: false}
+  },
+  yaxis: {show: false,max: 780},
+  tooltip: {enabled: false}
+};
+var chart1 = new ApexCharts(document.querySelector("#chart-area"), options);
+chart1.render();
+
+
+//하락차트
+var options = {
+  chart: {
+	id: "chart2",
+	type: "area",
+	foreColor: "#ccc",
+	toolbar: {show: false}
+  },
+  colors: ["#4071e8"],
+  stroke: {width: 1,curve: 'straight'},
+  grid: {show: false},
+  dataLabels: {enabled: false},
+  markers: {size: 0},
+  series: [
+	{
+		data: [
+		  {x: 1,y: -710},
+		  {x: 2,y: -690},
+		  {x: 3,y: -580},
+		  {x: 4,y: -550},
+		  {x: 5,y: -600},
+		  {x: 6,y: -620},
+		  {x: 7,y: -680},
+		  {x: 8,y: -590},
+		  {x: 9,y: -580},
+		  {x: 10,y: -500},
+		  {x: 11,y: -400},
+		  {x: 12,y: -520},
+		  {x: 13,y: -550},
+		  {x: 14,y: -420},
+		  {x: 15,y: -530},
+		  {x: 16,y: -780},
+		  {x: 17,y: -670},
+		  {x: 18,y: -500},
+		  {x: 19,y: -520}
+		]
+	}
+  ],
+  xaxis: {
+	show: false,
+	labels: {show: false},
+	axisBorder: {show: false},
+	axisTicks: {show: false}
+  },
+  yaxis: {show: false},
+  tooltip: {enabled: false}
+};
+var chart2 = new ApexCharts(document.querySelector("#chart-area2"), options);
+chart2.render();
+</script>
+</body>
+</html>
